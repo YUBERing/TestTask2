@@ -1,0 +1,359 @@
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraLight";
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraLight.woff") format("woff"), url("../fonts/Montserrat-ExtraLight.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 1920px;
+  height: auto;
+  background: #FFFFFF;
+}
+
+p {
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  text-align: left;
+  color: #888794;
+  line-height: 30.6px;
+  line-height: 170.4%;
+}
+
+.slogan {
+  font-family: "Montserrat-Light";
+  font-size: 36px;
+  color: #757AA5;
+  line-height: 132%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  background: #EDECF7;
+  overflow: hidden;
+}
+
+.betw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1387px;
+}
+
+.ls,
+.rs {
+  display: flex;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.3px solid #6E6D87;
+  border-radius: 100%;
+  box-sizing: border-box;
+  padding: 14px 14px;
+  margin-right: 35px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+
+.button {
+  width: 100%;
+  padding: 25px 15px;
+  font-style: normal;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25.36px;
+  text-align: left;
+  color: #515076;
+  opacity: 50%;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: rgba(81, 80, 118, 0.1);
+  opacity: 100%;
+  border-radius: 3px;
+}
+
+.shop {
+  background-color: #FFF;
+  padding: 17px 20px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  margin-right: 13px;
+}
+
+.ct {
+  color: #515076;
+  font-style: normal;
+  font-family: "Montserrat-Medium";
+  font-size: 16px;
+}
+
+.contact {
+  margin-left: 13px;
+}
+
+.zag {
+  font-family: "Montserrat-ExtraLight";
+  font-size: 70px;
+  line-height: 76px;
+  color: #757AA5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.diamaint {
+  width: 1387px;
+  display: flex;
+}
+
+.cttext {
+  display: flex;
+}
+
+.left {
+  width: 30%;
+}
+
+.eucalyptus {
+  position: relative;
+  width: 976px;
+  height: 648px;
+  transform: scaleX(-1);
+  opacity: 15%;
+  left: -110%;
+  z-index: -1;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.selprod {
+  display: flex;
+  background: #515076;
+  border-radius: 100px;
+  width: 270px;
+  margin: 54px;
+  justify-content: center;
+}
+
+.selprodtxt {
+  font-family: "Montserrat-SemiBold";
+  font-size: 13px;
+  letter-spacing: 32%;
+  color: #FFFFFF;
+  margin: 27px 9px;
+  opacity: 90%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+  position: relative;
+  left: -30%;
+}
+
+.dandelion {
+  position: relative;
+  left: 75%;
+  top: -4%;
+  z-index: -1;
+}
+
+.plas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  top: -6%;
+}
+
+.chern {
+  position: relative;
+  transform: scaleX(-1);
+  left: 90%;
+  top: -20%;
+  z-index: -1;
+}
+
+.blur1_1,
+.blur1_2 {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 70%;
+  height: 526px;
+  filter: blur(100px);
+  z-index: 1;
+}
+
+.blur1_1 {
+  top: 0%;
+}
+
+.blur1_2 {
+  top: 62%;
+}
+
+.name {
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 230px;
+  line-height: 212.52px;
+  text-align: left;
+  color: #515076;
+  margin: 60px 0px;
+  margin-top: 128px;
+}
+
+.choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1098px;
+  height: auto;
+  position: relative;
+}
+
+.list {
+  display: flex;
+  align-items: flex-end;
+  width: 1387px;
+  height: auto;
+  margin: 80px 0px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 20px;
+  margin: 30px;
+}
+
+.img1 {
+  width: 289px;
+  height: auto;
+}
+
+.img2 {
+  position: relative;
+  z-index: 1;
+  width: 340px;
+  height: auto;
+}
+
+.dsc {
+  width: 10%;
+  height: 10%;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 875px;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  width: 530px;
+  height: 345px;
+  padding: 50px 78px;
+  left: 10%;
+  top: 25%;
+  background-color: #FFF;
+  box-shadow: 0 -6px 0 0 #515076;
+}
+
+.pod {
+  font-family: "Montserrat-Medium";
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.blur2 {
+  position: absolute;
+  height: 367px;
+  left: -20%;
+  width: 200%;
+  background-color: #FAFAFA;
+  top: -25%;
+  filter: blur(120px);
+}
