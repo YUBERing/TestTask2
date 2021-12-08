@@ -26,7 +26,7 @@ body {
     background: #FFFFFF;
     margin: 0px 0px;
     align-self: center;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         min-width:375px;
     }
 }
@@ -52,8 +52,8 @@ header {
         height: 100%;
     }
 
-    @media screen and (max-width: 375px){
-        width:375px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width:100%;
     }
 }
 
@@ -75,7 +75,7 @@ header {
         width: 34px;
         height: 39px;
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         display: none;
     }
 }
@@ -86,7 +86,7 @@ header {
     
     width: 100%;
     height:100%;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         display: none;
         position: absolute;
         background-color: #EDECF7;
@@ -137,7 +137,7 @@ header {
     &:hover+.buttons{
         display: block;
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         display: block;
     }
     
@@ -163,7 +163,7 @@ header {
     justify-content: center;
     min-height: 100px;
     height: 100px;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         display: none;
     }
 }
@@ -188,7 +188,7 @@ header {
     color: #757AA5;
     width: 100%;
     height: auto;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         font-size: 30px;
     }
 }
@@ -201,24 +201,24 @@ main{
     width:100%;
     height:auto;
     overflow: hidden;
-    
+
 }
 
 .diamaint{
     width:$cont_w;
     position: relative;
     margin-bottom: 490px;
-    @media screen and (max-width: 375px){
-        width:375px;
-        margin-bottom: 290px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width: 359px;
     }
 }
 
 .cttext{
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -235,8 +235,10 @@ main{
         line-height: 132%;
         min-width: 387px;
         min-height: 192px;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             margin-top: 0px;
+            text-align: center;
+            min-width: auto;
         }
     }
     div:last-child{
@@ -248,13 +250,15 @@ main{
         line-height: 170.4%;
         min-width: 386px;
         min-height: 298px;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             margin-top: 30px;
             font-size: 16px;
+            text-align: center;
+            min-width: auto;
         }
     }
 
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         width:100%;
     }
 }
@@ -271,11 +275,11 @@ main{
     left:-425px;
     top:600px;
     z-index: -1;
-    @media screen and (max-width: 375px){
-        width:488px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         height: 324px;
+        width: 488px;
         top: 400px;
-        left: -212px;
+        left: -200px;
     }
 }
 
@@ -288,21 +292,34 @@ main{
         min-width: 391px;
         min-height: 114px;
         margin-bottom: 15px;
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            min-width: auto;
+            text-align: center;
+        }
     }
     .des:nth-child(2){
         min-width: 391px;
         min-height: 176px;
         margin-bottom: 1px;
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            text-align: center;
+        }
     }
     .des:nth-child(3){
         min-width: 391px;
         min-height: 186px;
         margin-bottom: 54px;
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            text-align: center;
+        }
     }
     .des:last-child{
         min-width: 391px;
         min-height: 163px;
         margin-bottom: 300px;
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            text-align: center;
+        }
     }
     div:not(.selprodtxt){
         font-family: 'Montserrat-Regular';
@@ -310,12 +327,13 @@ main{
         text-align: left;
         color:#888794;
         line-height: 30.6px;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             font-size: 16px;
         }
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         width:100%;
+        align-items: center;
     }
 }
 
@@ -360,6 +378,10 @@ main{
             font-family: 'WorkSans-Light';
             font-size: 36px;
         }
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            text-align: center;
+            min-width: 100%;
+        }
     }
     div:last-child{
         font-family:'Montserrat-Light';
@@ -369,10 +391,14 @@ main{
         margin-top: 95px;
         min-width: 350px;
         min-height: 119px;
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            text-align: center;
+        }
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         width:100%;
         margin-top: 0px;
+        align-items: center;
     }
 }
 
@@ -386,8 +412,8 @@ main{
     background-image: url('/img/Dandelion SeedG02 1.png');
     background-repeat: no-repeat;
     background-position-x: -500px;
-    @media screen and (max-width: 375px){
-        width:600px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width:700px;
         min-height:500px;
         background-size: cover;
         background-position-x: 0px;
@@ -416,7 +442,7 @@ main{
         z-index: 1;
         left: 10%;
         top:-55%;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             height: 225px;
             top: -20%;
             filter: blur(50px);
@@ -431,13 +457,13 @@ main{
         z-index: 1;
         left: -5%;
         top:50%;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             height: 300px;
             filter: blur(50px);
             left: 0%;
         }
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         height: 394px;
         width: 450px;
         background-size: cover;
@@ -457,9 +483,11 @@ main{
     margin-top: 128px;
     min-width: 953px;
     min-height: 213px;
-    @media screen and (max-width: 375px){
-        font-size: 90px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        font-size: 85px;
         margin-top: 64px;
+        min-width: auto;
+        text-align: center;
     }
 }
 
@@ -475,12 +503,12 @@ main{
     .zag{
         margin-bottom: 80px;
         text-align: center;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             margin-bottom: 40px;
         }
     }
-    @media screen and (max-width: 375px){
-        width: 375px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width: 100%;
     }
 }
 
@@ -493,7 +521,7 @@ main{
     width:100%;
     height: auto;
     position:relative;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         flex-direction: column;  
         align-items: center; 
     }
@@ -530,7 +558,7 @@ main{
             width: 340px;
             height: 325px;
             margin: 69px 20px 0px;
-            @media screen and (max-width: 375px){
+            @media screen and (max-width: 1365px) and (min-width: 375px){
                 margin: 69px 20px 0px;
                 width:290px;
                 height: 244px;
@@ -545,11 +573,11 @@ main{
                 font-size: 24px;
                 line-height: 32px;
             }
-            @media screen and (max-width: 375px){
+            @media screen and (max-width: 1365px) and (min-width: 375px){
                 min-width: 254px;
             }
         }
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             width: 330px;
             margin: 30px 0px;
         }
@@ -647,7 +675,7 @@ del{
     background-image: url("/img/Mask Group.png");
     background-repeat: no-repeat;
     background-size: cover;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         width: 423px;
         height: 334px;
         left: -200px;
@@ -662,8 +690,8 @@ del{
     height: auto;
     margin-top: 180px;
     margin-bottom: 270px;
-    @media screen and (max-width: 375px){
-        width: 375px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
@@ -678,10 +706,14 @@ del{
     height:auto;
     div{
         text-align: start;
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            text-align: center;
+        }
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         margin-bottom: 30px;
         align-items: center;
+        width: 100%;
     }
 }
 
@@ -693,6 +725,9 @@ del{
     margin-top: 100px;
     min-height: 198px;
     min-width: 333px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        min-width: 100%;
+    }
 }
 
 .rs{
@@ -702,7 +737,7 @@ del{
     height: auto;
     background-color: #F7F7FA;
     box-shadow: -40px 40px 0px 0px #515076;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         width: 300px;
         justify-content: center;
         flex-direction: column;
@@ -723,7 +758,7 @@ del{
     font-size: 18px;
     line-height: 19px;
     color: #515076;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         width: 31px;
         height: 31px;
         font-size: 10px;
@@ -742,7 +777,7 @@ del{
         margin-top: 28px;
         min-width: 337px;
         min-height: 156px;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             font-size: 20px;
             line-height: 25px;
             min-height: 100px;
@@ -757,7 +792,7 @@ del{
         margin-top: 34px;
         min-width: 433px;
         min-height: 111px;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             font-size: 10px;
             line-height: 25px;
             margin-top: 20px;
@@ -775,13 +810,13 @@ del{
         left:-45%;
         top: 85%;
         color:#FFFFFF;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             font-size: 7px;
             left: -100px;
             top: 470px;
         }
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         margin: 29px 0px 0px 31px;
         width: 270px;
     }
@@ -805,11 +840,11 @@ del{
         filter: blur(7px);
         left:90%;
         top:70%;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             top:60%;
         }
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         width: 142px;
         height: 259px;
         background-position: -100px -100px;
@@ -867,9 +902,14 @@ del{
         top:-74%;
         left:-35%;
         z-index: -1;
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            width:438px;
+            height: 639px;
+            top:-15%
+        }
     }
-    @media screen and (max-width: 375px){
-        width: 375px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width: 359px;
         flex-direction: column;
         align-items: center;
     }
@@ -919,7 +959,7 @@ del{
             background-repeat: no-repeat;
             background-size: cover;
         }
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             margin: 35px 0px;
         }
     }
@@ -965,7 +1005,7 @@ del{
     height: 1023px;
     background-color: #EDECF6;
     z-index: 0;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         height: 1123px;
     }
 }
@@ -980,7 +1020,7 @@ del{
     left:1040px;
     top:80px;
     z-index: -1;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         width: 319px;
         height: 598px;
         left: 210px;
@@ -992,8 +1032,9 @@ del{
     width: $cont_w;
     height: auto;
     position: relative;
-    @media screen and (max-width: 375px){
-        width: 375px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width: 359px;
+        
     }
 }
 
@@ -1007,10 +1048,12 @@ del{
     min-height: 328px;
     margin-bottom: 88px;
     margin-top: -221px;
-    @media screen and (max-width: 375px){
-        font-size: 100px;
-        margin-top: -175px;
-        margin-bottom: 250px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        font-size: 95px;
+        margin-top: -70px;
+        width: 100%;
+        min-height: 100px;
+        margin-bottom: 0px;
     }
 }
 
@@ -1024,10 +1067,12 @@ del{
     left:-120px;
     top: -100px;
     z-index: -1;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        position: relative;
         width: 533px;
         height: 410px;
-        top: -350px;
+        top: -0px;
+        left: -40px;
     }
 }
 
@@ -1035,8 +1080,10 @@ del{
     display: flex;
     justify-content: flex-end;
     position: relative;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1050,8 +1097,10 @@ del{
         line-height: 28px;
         letter-spacing: 0.3em;
         color: #A5A3B9;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             font-size: 14px;
+            width: auto;
+            text-align: center;
         }
     }
     div:nth-child(2){
@@ -1065,12 +1114,14 @@ del{
             font-family: 'Montserrat-Light';
             font-size: 120px;
             line-height: 131px;
-            @media screen and (max-width: 375px){
+            @media screen and (max-width: 1365px) and (min-width: 375px){
                 font-size: 110px;
             }
         }
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             font-size: 51px;
+            width: auto;
+            text-align: center;
         }
     }
     div:nth-child(3){
@@ -1080,13 +1131,18 @@ del{
         font-size: 16px;
         line-height: 32px;
         color: #888794;
-        @media screen and (max-width: 375px){
-            min-width: 375px;
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            min-width: auto;
+            max-width: 359px;
             font-size: 16px;
+            text-align: center;
         }
     }
-    @media screen and (max-width: 375px){
-        width: 375px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1102,13 +1158,16 @@ del{
         text-align: center;
         min-height: 77px;
     }
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width: 100%;
+    }
 }
 
 .place{
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         flex-direction: column;
     }
 }
@@ -1157,7 +1216,7 @@ del{
     height: auto;
     &:nth-child(1){
         margin-right: 30px;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             margin-right: 0px;
             margin-bottom: 30px;
         }
@@ -1166,7 +1225,7 @@ del{
         .advice:first-child{
             margin-bottom: 30px;
         }
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             margin-bottom: 30px;
         }
     }
@@ -1174,7 +1233,7 @@ del{
         position: relative;
         top:-100px;
         margin-left: 30px;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             top: 0px;
             margin-left: 0px;
         }
@@ -1196,8 +1255,8 @@ del{
     display: flex;
     width: $cont_w;
     margin-bottom: 22px;
-    @media screen and (max-width: 375px){
-        width: 375px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
@@ -1212,7 +1271,7 @@ del{
     .zag{
         min-height: 154px;
         margin-bottom: 55px;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             text-align: center;
             margin-bottom: 0px;
         }
@@ -1225,6 +1284,9 @@ del{
         min-height: 40px;
         margin-bottom: 14px;
         color:#515076;
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            text-align: center;
+        }
     }
     .ideolog{
         font-family: 'Montserrat-Medium';
@@ -1233,6 +1295,10 @@ del{
         color: #888794;
         min-height: 87px;
         margin-bottom: 39px;
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            text-align: center;
+            width: 359px;
+        }
     }
 
     .speak{
@@ -1254,6 +1320,9 @@ del{
             line-height: 28px;
             color:#888794;
         }
+        @media screen and (max-width: 1365px) and (min-width: 375px){
+            width: 359px;
+        }
     }
     .photos{
         display: flex;
@@ -1269,7 +1338,7 @@ del{
                 background-size: 115%;
                 background-position: -25px -4px;
                 margin-right: 65px;
-                @media screen and (max-width: 375px){
+                @media screen and (max-width: 1365px) and (min-width: 375px){
                     margin-right: 0px;
                 }
             }
@@ -1279,7 +1348,7 @@ del{
                 background-size: cover;
                 background-position-x: -10px;
                 margin-right: 65px;
-                @media screen and (max-width: 375px){
+                @media screen and (max-width: 1365px) and (min-width: 375px){
                     margin-right: 0px;
                     margin-top: 32px;
                 }
@@ -1289,17 +1358,17 @@ del{
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position-y: -55px;
-                @media screen and (max-width: 375px){
+                @media screen and (max-width: 1365px) and (min-width: 375px){
                     margin-top: 32px;
                 }
             }
         }
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             flex-direction: column;
             align-items: center;
         }
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         margin-right: 0px;
         align-items: center;
         width: 100%;
@@ -1320,7 +1389,7 @@ del{
         background-image: url("/img/bee-naturalles-mWftCrzvGzE-unsplash 1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             width: 300px;
             height: 335px;
         }
@@ -1335,14 +1404,14 @@ del{
         left:-45%;
         top:0%;
         z-index: -1;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             width: 215px;
             height: 214px;
             top: -50px;
             left: -20%;
         }
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         width: 100%;
         justify-content: center;
     }
@@ -1359,8 +1428,11 @@ footer{
     background-image: url('/img/vincent-guth-NUiQpGnj9rI-unsplash.png');
     background-repeat: no-repeat;
     background-size: cover;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         height: 575px;
+        padding-left: 8px;
+        padding-right: 8px;
+        box-sizing: border-box;
     }
 }
 
@@ -1369,8 +1441,8 @@ footer{
     height: 100%;
     display: flex;
     align-items: center;
-    @media screen and (max-width: 375px){
-        width: 375px;
+    @media screen and (max-width: 1365px) and (min-width: 375px){
+        width: 359px;
     }
 }
 
@@ -1387,7 +1459,7 @@ footer{
         min-height: 75px;
         margin-bottom: 33px;
         width: 100%;
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 1365px) and (min-width: 375px){
             margin-bottom: 0px;
         }
     }
@@ -1409,7 +1481,7 @@ footer{
             }
         }
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         width: 375px;
         height: 300px;
         padding-top: 25px;
@@ -1424,7 +1496,7 @@ footer{
     min-height: 85px;
     margin-bottom: 16px;
     width: 100%;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         font-size: 14px;
         margin-bottom: 16px;
         line-height: 24px;
@@ -1439,7 +1511,7 @@ footer{
     background-color: #FAFAFA;
     top:-25%;
     filter:blur(30px);
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 1365px) and (min-width: 375px){
         top: -300px;
     }
 }
